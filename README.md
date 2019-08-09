@@ -1,6 +1,10 @@
-# Particle Jekyll Theme
+# M. Ueno's Homepage
 
-![](./particle.jpg)
+Under Construction...
+
+
+<!-- # Particle Jekyll Theme
+
 
 This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
@@ -72,4 +76,4 @@ This theme is free and open source software, distributed under the The MIT Licen
 
 This theme was partially designed with the inspiration from these fine folks
 - [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/) -->
