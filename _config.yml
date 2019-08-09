@@ -1,12 +1,12 @@
 # Site settings
-title: eunos-1128 Homepage
-description: Website about eunos-1128(M. Ueno)
+title: M. Ueno's Homepage
+description: Website about M. Ueno(eunos-1128)
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: M. Ueno
-user_description: I am software developer living in Japan. My specialty is Web development using Python/Javascript. In the university and graduate school I studied chemistry, pharmaceutical science, and neurobiology.
+user_description: I am software developer living in Japan. My specialty is Web development using Python/Javascript. In the university and graduate school I studied chemistry, pharmaceutical science and neurobiology.
 user_title: Software Developer
 email: eunosium-1128@live.jp
 # twitter_username: lorem_ipsum
