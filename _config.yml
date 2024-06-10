@@ -9,12 +9,11 @@ username: M. Ueno
 user_description: I am engineering researcher living in Japan. My specialty is Bioinformatics, Cheminformatics and Web Development. In the university and graduate school I studied chemistry, pharmaceutical science and neurobiology.
 user_title: Engineering Researcher &#x1f4bb;
 email: eunosium-1128@live.jp
-# twitter_username: lorem_ipsum
-github_username:  eunos-1128
-# gplus_username:  lorem_ipsum
+twitter_username: lorem_ipsum
+github_username: eunos-1128
 
 # Google-analytics
 google-analytics:
   id: ""
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ["package.json", "src", "node_modules"]
