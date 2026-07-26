@@ -1,8 +1,8 @@
 # Site settings
-title: Ueno, M.'s Homepage
-description: Website about Ueno, M.(eunos-1128)
+title: Ueno, M. — Research Engineer | Bioinformatics &amp; Cheminformatics
+description: Personal homepage of Ueno, M. (eunos-1128), a research engineer in Japan focusing on bioinformatics, cheminformatics, drug discovery, and machine learning for medicinal chemistry.
+url: "https://eunos-1128.github.io" # the base hostname & protocol for your site
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Ueno, M.
@@ -12,8 +12,8 @@ email: eunosium-1128@live.jp
 twitter_username: eunos1128
 github_username: eunos-1128
 
-# Google-analytics
-google-analytics:
-  id: ""
+# Cloudflare Web Analytics (cookieless, GDPR-friendly)
+cloudflare-analytics:
+  token: "" # paste the token from your Cloudflare Web Analytics site
 
 exclude: ["package.json", "src", "node_modules"]

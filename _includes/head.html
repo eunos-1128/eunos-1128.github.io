@@ -5,6 +5,51 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="{{ site.username }}">
+
+  {% assign site_url = site.url | default: 'https://eunos-1128.github.io' %}
+  {% assign page_url = page.url | default: '/' | prepend: site_url %}
+  {% assign og_image = '/particle.jpg' | prepend: site_url %}
+
+  <link rel="canonical" href="{{ page_url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ og_image }}">
+  {% if site.twitter_username %}<meta name="twitter:creator" content="@{{ site.twitter_username }}">{% endif %}
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.username }}",
+    "url": "{{ site_url }}",
+    "image": "{{ og_image }}",
+    "jobTitle": "Research Engineer",
+    "description": "{{ site.user_description | strip_html | strip_newlines }}",
+    "email": "mailto:{{ site.email }}",
+    "sameAs": [
+      "https://github.com/{{ site.github_username }}",
+      "https://x.com/{{ site.twitter_username }}",
+      "https://www.linkedin.com/in/mu-1128/",
+      "https://www.researchgate.net/profile/Ueno-M",
+      "https://stackoverflow.com/users/8045584/eunos-1128",
+      "https://medium.com/@eunos-1128"
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">

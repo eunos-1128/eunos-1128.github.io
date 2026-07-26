@@ -26,8 +26,7 @@ Compile the assets and run Jekyll locally:
 
 - Install [Node.js](https://nodejs.org/)
 - Install [Jekyll](https://jekyllrb.com): `gem install bundler jekyll`
-- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
-- Install dependencies: `yarn`
+- Install dependencies: `npm install`
 - Build assets: `gulp`
 - Serve the site: `jekyll serve`
 
