@@ -1,6 +1,15 @@
 <footer class="footer">
     <p>&copy; {{ site.time | date: '%Y' }} {{site.username}}</p>
     <p>Built with Jekyll and <span class="love">❤</span> &middot; Theme based on <a href="https://github.com/nrandecker/particle">Particle</a> by Nathan Randecker</p>
+    {% if site.goatcounter.code and site.goatcounter.code != "" %}
+    <p class="visitor-count">Visitors: <span id="visitor-count">–</span></p>
+    <script>
+    fetch('https://{{ site.goatcounter.code }}.goatcounter.com/counter/TOTAL.json')
+      .then(function (r) { return r.json(); })
+      .then(function (d) { document.getElementById('visitor-count').textContent = d.count; })
+      .catch(function () { var e = document.getElementById('visitor-count'); if (e) e.textContent = 'n/a'; });
+    </script>
+    {% endif %}
 </footer>
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
