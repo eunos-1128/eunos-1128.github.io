@@ -30,4 +30,9 @@
 .user-details {
   text-align: center;
   margin: 5px auto;
+  p {
+    text-align: left;
+    max-width: 720px;
+    margin: 10px auto;
+  }
 }
