@@ -1,75 +1,50 @@
-# M. Ueno's Homepage
+# eunos-1128.github.io
 
-Under Construction...
+[![Deploy](https://img.shields.io/badge/deployed-GitHub%20Pages-blue?logo=github)](https://eunos-1128.github.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.txt)
 
+Personal homepage of **UENO, M.** — a research engineer studying bioinformatics and cheminformatics.
 
-<!-- # Particle Jekyll Theme
+Live site: <https://eunos-1128.github.io/>
 
+## About
 
-This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
+A single-page portfolio site introducing my expertise, skills, and featured projects.
+It is built with [Jekyll](https://jekyllrb.com) and based on the
+[Particle](https://github.com/nrandecker/particle) theme, with the following stack:
 
-The Theme features:
+- Jekyll (static site generation)
+- SASS (styles)
+- gulp (asset build)
+- particles.js (animated background)
+- Sweet Scroll (smooth scrolling)
+- Font Awesome & Devicon (icons, loaded via CDN)
 
-- Gulp
-- SASS
-- Sweet Scroll
-- Particle.js
-- BrowserSync
-- Font Awesome and Devicon icons
-- Google Analytics
-- Info Customization
+## Local Development
 
-## Basic Setup
+Compile the assets and run Jekyll locally:
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
-3. Edit `_config.yml` to personalize your site.
-
-## Site and User Settings
-
-You have to fill some informations on `_config.yml` to customize your site.
-
-```
-# Site settings
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
-
-# User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-```
-
-**Don't forget to change your url before you deploy your site!**
-
-## Color and Particle Customization
-- Color Customization
-  - Edit the sass variables
-- Particle Customization
-  - Edit the json data in particle function in app.js
-  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
-
-## Running the blog in local
-
-In order to compile the assets and run Jekyll on local you need to follow those steps:
-
-- Install [NodeJS](https://nodejs.org/)
-- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
+- Install [Node.js](https://nodejs.org/)
+- Install [Jekyll](https://jekyllrb.com): `gem install bundler jekyll`
 - Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
 - Install dependencies: `yarn`
-- Run: `gulp`
+- Build assets: `gulp`
+- Serve the site: `jekyll serve`
 
-## License
+## Configuration
 
-This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
+Site and user information is defined in `_config.yml` (title, description, username,
+user description, social usernames, etc.). Page content lives in `_includes/`
+(`about.html`, `projects.html`, `header.html`, ...).
 
 ## Credits
 
-This theme was partially designed with the inspiration from these fine folks
+Based on the [Particle](https://github.com/nrandecker/particle) Jekyll theme by
+Nathan Randecker, which in turn drew inspiration from:
+
 - [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/) -->
+- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+
+## License
+
+This project is distributed under the [MIT License](./LICENSE.txt).
