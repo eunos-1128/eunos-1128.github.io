@@ -12,8 +12,8 @@ email: eunosium-1128@live.jp
 twitter_username: eunos1128
 github_username: eunos-1128
 
-# Cloudflare Web Analytics (cookieless, GDPR-friendly)
-cloudflare-analytics:
-  token: "" # paste the token from your Cloudflare Web Analytics site
+# GoatCounter (open source, cookieless, privacy-friendly)
+goatcounter:
+  code: "eunos-1128" # your GoatCounter subdomain, e.g. "eunos-1128" for eunos-1128.goatcounter.com
 
 exclude: ["package.json", "src", "node_modules"]
